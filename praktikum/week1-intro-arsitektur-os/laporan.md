@@ -1,25 +1,28 @@
 
-# Laporan Praktikum Minggu [X]
+# Laporan Praktikum Minggu [1]
 Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : [Ahmad Wildan Asrovi]  
+- **NIM**   : [250202927]  
+- **Kelas** : [1IKRB]
 
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+Setelah menyelesaikan tugas ini, mahasiswa mampu:
+
+1.Menjelaskan peran sistem operasi dalam arsitektur komputer.
+2.Mengidentifikasi komponen utama OS (kernel, system call, device driver, file system).
+3.Membandingkan model arsitektur OS (monolithic, layered, microkernel).
+4.Menggambarkan diagram sederhana arsitektur OS menggunakan alat bantu digital (draw.io / mermaid).
 
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+mengacu pada struktur dan prinsip desainnya, yang menentukan bagaimana sistem mengelola perangkat keras, memori, proses, dan sumber daya lainnya. Terdapat beberapa jenis arsitektur dasar sistem operasi, termasuk arsitektur monolitik, berlapis, mikrokernel, hibrida, dan client-server
 
 ---
 
@@ -34,9 +37,7 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
 ```bash
-uname -a
-lsmod | head
-dmesg | head
+
 ```
 
 ---
@@ -61,11 +62,11 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
 ## Quiz
 1. [Pertanyaan 1]  
-   **Jawaban:**  
+   **manajemen sumber daya, manajemen file, dan menyediakan antarmuka pengguna untuk interaksi dengan komputer**  
 2. [Pertanyaan 2]  
-   **Jawaban:**  
+   **mode kernel memiliki kontrol penuh atas perangkat keras dan memori sistem, sementara mode pengguna berjalan dengan akses yang dibatasi untuk aplikasi dan harus meminta izin dari kernel untuk melakukan operasi yang memerlukan hak istimewa**  
 3. [Pertanyaan 3]  
-   **Jawaban:**  
+   **Contoh sistem operasi dengan arsitektur monolitik adalah Linux dan Unix tradisional, sementara contoh OS dengan arsitektur mikrokernel adalah QNX dan Symbian**  
 
 ---
 

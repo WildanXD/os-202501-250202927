@@ -1,25 +1,28 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+# Laporan Praktikum Minggu [2]
+Topik: [syscall_structure]
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : [Ahmad Wildan Asrovi]  
+- **NIM**   : [250202927]  
+- **Kelas** : [1IKRB]
 
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+Setelah menyelesaikan tugas ini, mahasiswa mampu:
+
+1.Menjelaskan konsep dan fungsi system call dalam sistem operasi.
+2.Mengidentifikasi jenis-jenis system call dan fungsinya.
+3.Mengamati alur perpindahan mode user ke kernel saat system call terjadi.
+4.Menggunakan perintah Linux untuk menampilkan dan menganalisis system call.
 
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+cara terprogram bagi program untuk meminta layanan dari sistem operasi, berfungsi sebagai jembatan antara aplikasi pengguna dan kernel OS. Program menggunakan system call untuk meminta layanan tingkat rendah seperti membuat proses baru, membuka/menulis file, atau berinteraksi dengan perangkat keras, karena aplikasi tidak dapat mengakses perangkat keras atau sumber daya sistem secara langsung demi keamanan dan stabilitas. 
 
 ---
 
@@ -32,18 +35,16 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 ---
 
 ## Kode / Perintah
-Tuliskan potongan kode atau perintah utama:
+potongan kode atau perintah utama:
 ```bash
-uname -a
-lsmod | head
-dmesg | head
+strace ls
 ```
 
 ---
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/example.png)
+![Screenshot 2025-10-19 141053 , Screenshot 2025-10-19 141054 , Screenshot 2025-10-19 141217](screenshots/example.png)
 
 ---
 
@@ -61,11 +62,11 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
 ## Quiz
 1. [Pertanyaan 1]  
-   **Jawaban:**  
+   **Manajemen Proses, Manajemen File, Manajemen Perangkat, Pemeliharaan Informasi, Komunikasi Antar Proses, Keamanan**  
 2. [Pertanyaan 2]  
-   **Jawaban:**  
+   **Manajemen Proses, Manajemen File, Manajemen Perangkat, Pemeliharaan Informasi**  
 3. [Pertanyaan 3]  
-   **Jawaban:**  
+   **karena system call memerlukan akses ke sumber daya (resource) yang hanya bisa diakses oleh kernel (mode kernel), bukan oleh program pengguna (user mode)**  
 
 ---
 
