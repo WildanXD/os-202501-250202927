@@ -37,7 +37,10 @@ mengacu pada struktur dan prinsip desainnya, yang menentukan bagaimana sistem me
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
 ```bash
-
+uname -a
+whoami
+lsmod | head
+dmesg | head
 ```
 
 ---
