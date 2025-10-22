@@ -38,6 +38,10 @@ cara terprogram bagi program untuk meminta layanan dari sistem operasi, berfungs
 potongan kode atau perintah utama:
 ```bash
 strace ls
+
+strace -e trace=open,read,write,close cat /etc/passwd
+
+dmesg | tail -n 10
 ```
 
 ---
