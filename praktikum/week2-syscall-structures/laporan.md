@@ -48,7 +48,10 @@ dmesg | tail -n 10
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot 2025-10-19 141053 , Screenshot 2025-10-19 141054 , Screenshot 2025-10-19 141217](screenshots/example.png)
+![Screenshot hasil](screenshots/example.png)
+
+![Screenshot hasil](screenshots/strace_ls.png)
+
 
 ---
 
