@@ -1,25 +1,33 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+# Laporan Praktikum Minggu [3]
+Topik: [Manajemen File dan Permission di Linux]
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : [Ahmad Wildan Asrovi]  
+- **NIM**   : [250202927]  
+- **Kelas** : [1 IKRB]
 
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+> Setelah menyelesaikan tugas ini mahasiswa mampu:
+> 
+1.Menggunakan perintah ls, pwd, cd, cat untuk navigasi file dan direktori.
+
+2.Menggunakan chmod dan chown untuk manajemen hak akses file.
+
+3.Menjelaskan hasil output dari perintah Linux dasar.
+
+4.Menyusun laporan praktikum dengan struktur yang benar.
+
+5.Mengunggah dokumentasi hasil ke Git Repository tepat waktu
 
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+Dalam sistem operasi Linux, perintah dasar seperti ls, pwd, cd, dan cat digunakan untuk melakukan navigasi file dan direktori, menampilkan isi folder, mengetahui posisi kerja, berpindah antar direktori, serta melihat isi file teks. Selain itu, perintah chmod dan chown digunakan untuk mengatur hak akses dan kepemilikan file guna menjaga keamanan sistem. Setiap perintah Linux menghasilkan output yang memberikan informasi tentang kondisi file atau sistem, sehingga pemahaman terhadap hasil output sangat penting agar pengguna dapat bekerja dengan efektif dan memahami fungsi dari setiap perintah yang dijalankan..
 
 ---
 
@@ -34,16 +42,22 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
 ```bash
-uname -a
-lsmod | head
-dmesg | head
+pwd
+ls -l
+cd /tmp
+ls -a
+cat /etc/passwd | head -n 5
+echo "Hello <NAME><NIM>" > percobaan.txt
+ls -l percobaan.txt
+chmod 600 percobaan.txt
+ls -l percobaan.txt
 ```
 
 ---
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/example.png)
+![Screenshot hasil](screenshots/screenshot-pwd.png)
 
 ---
 
