@@ -75,11 +75,18 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
 ## Quiz
 1. [Pertanyaan 1]  
-   **Jawaban:**  
+   **Perintah chmod berfungsi untuk mengubah hak akses file atau direktori di Linux, menentukan siapa yang bisa membaca, menulis, atau mengeksekusi file.**  
 2. [Pertanyaan 2]  
-   **Jawaban:**  
+   **Kode permission rwxr-xr-- artinya: pemilik bisa baca, tulis, dan eksekusi; grup bisa baca dan eksekusi; pengguna lain hanya bisa baca.**  
 3. [Pertanyaan 3]  
-   **Jawaban:**  
+**Perbedaan utama antara chown dan chmod adalah:**
+   
+  **chown digunakan untuk mengubah pemilik atau grup file/direktori.**
+
+  **chmod digunakan untuk mengubah hak akses (read, write, execute) file/direktori.**
+
+  **Singkatnya, chown mengatur siapa pemiliknya, sedangkan chmod mengatur apa yang bisa dilakukan terhadap file.**
+
 
 ---
 
