@@ -13,10 +13,15 @@ Topik: [Penjadwalan CPU – FCFS dan SJF]
 
 ## Tujuan
 > Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+
 1.Menghitung waiting time dan turnaround time untuk algoritma FCFS dan SJF.
+
 2.Menyajikan hasil perhitungan dalam tabel yang rapi dan mudah dibaca.
+
 3.Membandingkan performa FCFS dan SJF berdasarkan hasil analisis.
+
 4.Menjelaskan kelebihan dan kekurangan masing-masing algoritma.
+
 5.Menyimpulkan kapan algoritma FCFS atau SJF lebih sesuai digunakan.
 
 ---
@@ -50,14 +55,14 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 ## Analisis
-- Jelaskan makna hasil percobaan.  
-- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+Perbandingan Rata-Rata WT dan TAT antara FCFS dan SJF
+Berdasarkan hasil perhitungan, algoritma FCFS (First Come First Served) memiliki rata-rata Waiting Time (WT) sebesar 8,75 dan Turnaround Time (TAT) sebesar 14,75, sedangkan algoritma SJF (Shortest Job First) memiliki rata-rata Waiting Time sebesar 6,25 dan Turnaround Time sebesar 12,25. Hasil tersebut menunjukkan bahwa algoritma SJF lebih efisien dibandingkan FCFS karena mampu mengurangi waktu tunggu dan waktu penyelesaian rata-rata. Hal ini terjadi karena SJF mengeksekusi proses dengan waktu eksekusi paling singkat terlebih dahulu, sehingga mengoptimalkan penggunaan CPU dan mempercepat penyelesaian proses.
 
 ---
 
 ## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+Kesimpulan:
+Algoritma SJF lebih unggul dibandingkan FCFS dalam hal efisiensi waktu, terutama ketika proses memiliki durasi eksekusi yang bervariasi. Namun, FCFS tetap lebih adil karena menjalankan proses berdasarkan urutan kedatangan tanpa memperhatikan lamanya waktu eksekusi.
 
 ---
 
