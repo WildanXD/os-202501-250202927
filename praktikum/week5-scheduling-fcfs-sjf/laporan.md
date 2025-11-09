@@ -1,25 +1,28 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+# Laporan Praktikum Minggu [5]
+Topik: [Penjadwalan CPU – FCFS dan SJF]
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : [Ahmad Wildan Asrovi]  
+- **NIM**   : [250202927]  
+- **Kelas** : [1IKRB]
 
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
 > Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+1.Menghitung waiting time dan turnaround time untuk algoritma FCFS dan SJF.
+2.Menyajikan hasil perhitungan dalam tabel yang rapi dan mudah dibaca.
+3.Membandingkan performa FCFS dan SJF berdasarkan hasil analisis.
+4.Menjelaskan kelebihan dan kekurangan masing-masing algoritma.
+5.Menyimpulkan kapan algoritma FCFS atau SJF lebih sesuai digunakan.
 
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+FCFS (First Come First Served) menjadwalkan proses berdasarkan urutan kedatangannya dalam antrean FIFO, sedangkan SJF (Shortest Job First) memprioritaskan proses dengan waktu eksekusi (burst time) terpendek untuk dilayani terlebih dahulu. Keduanya adalah algoritma penjadwalan CPU yang bertujuan mengelola proses, tetapi memiliki kelebihan dan kekurangan yang berbeda, di mana FCFS sangat sederhana namun bisa menghasilkan waktu tunggu lama, sedangkan SJF dapat meminimalkan waktu tunggu rata-rata tetapi lebih kompleks.
 
 ---
 
@@ -34,9 +37,8 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
 ```bash
-uname -a
-lsmod | head
-dmesg | head
+Waiting Time (WT) = waktu mulai eksekusi - Arrival Time
+Turnaround Time (TAT) = WT + Burst Time
 ```
 
 ---
