@@ -45,7 +45,7 @@ Turnaround Time (TAT) = WT + Burst Time
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/example.png)
+![Screenshot hasil](screenshots/Excel.png)
 
 ---
 
@@ -62,12 +62,20 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+  **Jawaban:**  
+1. Perbedaan FCFS dan SJF
+Algoritma FCFS (First Come First Served) menjalankan proses berdasarkan urutan kedatangan. Sistem ini adil, tetapi kurang efisien karena proses kecil bisa menunggu proses besar selesai (convoy effect).
+Sementara itu, SJF (Shortest Job First) menjalankan proses dengan waktu eksekusi paling singkat terlebih dahulu. Algoritma ini lebih efisien karena waktu tunggu rata-rata lebih kecil, namun bisa menyebabkan proses       panjang tertunda (starvation).
+Secara singkat, FCFS menekankan keadilan, sedangkan SJF menekankan efisiensi.
+
+ **Jawaban:** 
+ 
+2. Algoritma SJF (Shortest Job First) menghasilkan rata-rata waktu tunggu minimum karena proses dengan waktu eksekusi paling singkat dijalankan terlebih dahulu. Dengan cara ini, proses-proses cepat tidak perlu menunggu proses yang lebih lama selesai, sehingga total waktu tunggu semua proses menjadi lebih kecil. Urutan eksekusi yang mengutamakan proses singkat membuat penggunaan CPU lebih efisien dan meminimalkan waktu tunda secara keseluruhan
+
+ **Jawaban:** 
+ 
+3. Kelemahan algoritma SJF (Shortest Job First) pada sistem interaktif adalah sulitnya memperkirakan waktu eksekusi setiap proses secara akurat. Selain itu, algoritma ini dapat menyebabkan proses dengan waktu eksekusi panjang tertunda terus-menerus karena selalu didahului oleh proses yang lebih singkat. Akibatnya, sistem menjadi kurang responsif dan dapat menimbulkan masalah starvation pada proses-proses besar.    
+  
 
 ---
 
