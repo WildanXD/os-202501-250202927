@@ -1,25 +1,42 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+# Laporan Praktikum Minggu [6]
+Topik: [Penjadwalan CPU – Round Robin (RR) dan Priority Scheduling]
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : [Ahmad Wildan Asrovi]  
+- **NIM**   : [250202927]  
+- **Kelas** : [1IKRB]
 
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+Setelah menyelesaikan tugas ini, mahasiswa mampu:
+
+1.Menghitung waiting time dan turnaround time pada algoritma RR dan Priority.
+
+2.Menyusun tabel hasil perhitungan dengan benar dan sistematis.
+
+3.Membandingkan performa algoritma RR dan Priority.
+
+4.Menjelaskan pengaruh time quantum dan prioritas terhadap keadilan eksekusi proses.
+
+5.Menarik kesimpulan mengenai efisiensi dan keadilan kedua algoritma.
 
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+1.Penjadwalan CPU bertujuan mengatur urutan eksekusi proses agar pemanfaatan CPU optimal serta meminimalkan waiting time dan turnaround time.
+
+2.Round Robin (RR) adalah algoritma penjadwalan preemptive yang memberikan jatah waktu CPU (time quantum) secara bergiliran untuk menjamin keadilan antar proses.
+
+3.Priority Scheduling mengeksekusi proses berdasarkan tingkat prioritas, di mana proses dengan prioritas tertinggi akan dijalankan lebih dahulu.
+
+4.Pada Priority Scheduling, dapat terjadi starvation pada proses berprioritas rendah, sehingga sering digunakan teknik aging untuk meningkatkan prioritas secara bertahap.
+
+5.Pemilihan algoritma penjadwalan sangat bergantung pada kebutuhan sistem, seperti respons cepat pada sistem interaktif atau penanganan proses kritis pada sistem real-time.
+
 
 ---
 
