@@ -81,24 +81,42 @@ Buat tabel perbandingan efek quantum.
 ---
 
 ## Analisis
-- Jelaskan makna hasil percobaan.  
-- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+Berdasarkan hasil simulasi penjadwalan CPU yang telah dilakukan, terlihat bahwa setiap algoritma memiliki karakteristik dan performa yang berbeda terhadap nilai Waiting Time (WT) dan Turnaround Time (TAT).
+
+Pada algoritma Round Robin dengan quantum 3, sistem bersifat sangat adil karena setiap proses mendapatkan jatah CPU yang sama. Namun, nilai WT dan TAT cenderung lebih besar akibat sering terjadinya context switching, terutama pada proses dengan burst time besar seperti p3 dan p4. Hal ini menyebabkan proses harus menunggu lebih lama sebelum dapat kembali dieksekusi.
+
+Ketika nilai time quantum diperbesar menjadi 5, jumlah context switching berkurang dan proses dapat berjalan lebih lama dalam satu giliran. Akan tetapi, karakteristik Round Robin mulai mendekati FCFS, sehingga proses yang datang lebih awal memiliki waktu tunggu lebih panjang. Akibatnya, rata-rata WT dan TAT justru meningkat dibandingkan quantum 3.
+
+Pada Priority Scheduling (Non-Preemptive), proses dengan prioritas tinggi dieksekusi lebih awal tanpa preemption. Hasilnya, algoritma ini menghasilkan nilai rata-rata WT dan TAT paling kecil pada percobaan ini. Namun demikian, proses dengan prioritas rendah seperti p4 mengalami waktu tunggu yang cukup besar, sehingga algoritma ini berpotensi menyebabkan starvation jika tidak dikombinasikan dengan mekanisme aging. 
 
 ---
 
 ## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+Round Robin unggul dalam keadilan dan cocok untuk sistem interaktif.
+
+Priority Scheduling lebih efisien dari sisi waktu, tetapi kurang adil.
+
+Pemilihan algoritma penjadwalan harus disesuaikan dengan kebutuhan sistem, apakah mengutamakan responsivitas atau efisiensi eksekusi.
 
 ---
 
 ## Quiz
 1. [Pertanyaan 1]  
-   **Jawaban:**  
+   **Jawaban: 1. Perbedaan Utama antara Round Robin dan Priority Scheduling
+Perbedaan utama antara Round Robin dan Priority Scheduling terletak pada cara penentuan urutan eksekusi proses.
+Round Robin membagi waktu CPU secara merata kepada semua proses menggunakan time quantum, sehingga setiap proses mendapatkan kesempatan yang adil untuk dieksekusi.
+Sebaliknya, Priority Scheduling menentukan urutan eksekusi berdasarkan tingkat prioritas, di mana proses dengan prioritas tertinggi akan dijalankan terlebih dahulu.**  
 2. [Pertanyaan 2]  
-   **Jawaban:**  
+   **Jawaban: 2. Pengaruh Besar/Kecilnya Time Quantum terhadap Performa Sistem
+Ukuran time quantum sangat mempengaruhi performa sistem pada algoritma Round Robin:
+Time quantum kecil menyebabkan context switching lebih sering, sehingga meningkatkan overhead dan waktu tunggu proses.
+Time quantum besar mengurangi context switching, tetapi membuat perilaku Round Robin mendekati FCFS, sehingga respons sistem menjadi lebih lambat.
+Oleh karena itu, time quantum harus dipilih secara seimbang agar sistem tetap responsif dan efisien.**  
 3. [Pertanyaan 3]  
-   **Jawaban:**  
+   **Jawaban: 3. Mengapa Algoritma Priority dapat Menyebabkan Starvation?
+Starvation terjadi pada Priority Scheduling karena proses dengan prioritas rendah terus-menerus kalah oleh proses dengan prioritas lebih tinggi.
+Jika proses prioritas tinggi terus masuk ke sistem, maka proses prioritas rendah dapat menunggu tanpa batas waktu dan tidak pernah dieksekusi.
+Masalah ini biasanya diatasi dengan teknik aging, yaitu meningkatkan prioritas proses yang terlalu lama menunggu.**  
 
 ---
 
