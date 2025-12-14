@@ -41,25 +41,41 @@ Setelah menyelesaikan tugas ini, mahasiswa mampu:
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
+1.Mempelajari konsep penjadwalan CPU Round Robin dan Priority Scheduling (Non-Preemptive).
+2.Menentukan data proses (arrival time, burst time, dan priority).
+3.Menentukan nilai time quantum untuk algoritma Round Robin.
+4.Mensimulasikan penjadwalan proses secara manual menggunakan tabel dan Gantt Chart.
+5.Mencatat waktu mulai, waktu selesai, serta sisa burst time tiap proses.
+6.Menghitung Waiting Time (WT) dan Turnaround Time (TAT) untuk masing-masing proses.
+7.Membandingkan hasil RR dan Priority Scheduling berdasarkan nilai WT dan TAT.
+8.Menarik kesimpulan dari hasil eksperimen.
+
+
 
 ---
 
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
 ```bash
-uname -a
-lsmod | head
-dmesg | head
+Siapkan Data Proses
+Gunakan time quantum (q) = 3.
+Hitung waiting time dan turnaround time untuk tiap proses.
+Catat sisa burst time tiap putaran.
+Urutkan proses berdasarkan nilai prioritas (angka kecil = prioritas tinggi).
+Lakukan perhitungan manual untuk:
+WT[i] = waktu mulai eksekusi - Arrival[i]
+TAT[i] = WT[i] + Burst[i]
+Buat tabel perbandingan hasil RR dan Priority.
+Ubah quantum menjadi 2 dan 5.
+Amati perubahan nilai rata-rata waiting time dan turnaround time.
+Buat tabel perbandingan efek quantum.
+
+
 ```
 
 ---
 
 ## Hasil Eksekusi
-Sertakan screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](screenshots/example.png)
 
 ---
