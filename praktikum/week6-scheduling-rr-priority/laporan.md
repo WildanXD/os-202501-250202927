@@ -76,7 +76,11 @@ Buat tabel perbandingan efek quantum.
 ---
 
 ## Hasil Eksekusi
-![Screenshot hasil](screenshots/example.png)
+![Screenshot hasil](screenshots/Week6_Perbandingan_2.png)
+![Screenshot hasil](screenshots/Week6_Q3_Q5.png)
+![Screenshot hasil](screenshots/week6_RR.png)
+![Screenshot hasil](screenshots/week6_PS.png)
+![Screenshot hasil](screenshots/week6_Perbandingan.png)
 
 ---
 
