@@ -121,36 +121,52 @@ Data proses disimpan dalam file Scheduling.csv untuk memisahkan data uji dari ko
 
 </div>
 
-![Screenshot hasil](screenshots/.png)
+![Screenshot hasil](screenshots/Hasil_Scheduling.png)
 
 ---
 
-## Analisis
-- Jelaskan makna hasil percobaan.  
-- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+## 4.1 Pembahasan (Discussion)
+
+Berdasarkan hasil pengujian, algoritma SJF menghasilkan rata-rata waiting time dan turnaround time yang lebih rendah dibandingkan FCFS. Hal ini disebabkan oleh strategi SJF yang memprioritaskan proses dengan waktu eksekusi terpendek sehingga proses singkat dapat diselesaikan lebih cepat.
+
+Sebaliknya, algoritma FCFS cenderung mengalami convoy effect, di mana proses dengan burst time panjang yang dieksekusi lebih awal menyebabkan proses lain harus menunggu lebih lama. Hal ini terlihat dari tingginya waiting time pada proses P3 dan P4.
+
+Meskipun SJF lebih optimal secara teori, algoritma ini membutuhkan informasi burst time terlebih dahulu, yang pada sistem nyata sulit diprediksi secara akurat. Oleh karena itu, FCFS tetap digunakan pada sistem tertentu karena kesederhanaan dan keadilannya.
 
 ---
 
-## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+## 5.1 Kesimpulan
+
+1. Algoritma SJF menghasilkan rata-rata waiting time dan turnaround time yang lebih kecil dibandingkan FCFS.
+
+2. FCFS lebih sederhana dalam implementasi namun kurang efisien untuk sistem dengan variasi burst time yang besar.
+
+3. Pemilihan algoritma penjadwalan CPU harus disesuaikan dengan kebutuhan dan karakteristik sistem.
 
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. **[Mengapa format IMRAD membantu membuat laporan praktikum lebih ilmiah dan mudah dievaluasi?]**  
+
+   Karena IMRAD menyusun laporan secara sistematis mulai dari tujuan, metode, hasil, hingga analisis sehingga memudahkan evaluasi secara akademik.
+    
+3. **[Apa perbedaan antara bagian Hasil dan Pembahasan?]**  
+
+   Bagian Hasil menyajikan data secara objektif, sedangkan Pembahasan berisi analisis dan interpretasi dari data tersebut.
+     
+5. **[Mengapa sitasi dan daftar pustaka penting, bahkan untuk laporan praktikum?]**  
+
+   Sitasi menunjukkan dasar teori yang digunakan dan meningkatkan kredibilitas serta keabsahan laporan. 
 
 ---
 
-## Refleksi Diri
-Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+## Daftar Pustaka
+
+Silberschatz, A., Galvin, P. B., & Gagne, G. Operating System Concepts, 10th Edition.
+
+Tanenbaum, A. S. Modern Operating Systems, 4th Edition.
+
+OSTEP – CPU Scheduling. 
 
 ---
 
